@@ -8,6 +8,7 @@ GNL_PATH	= get-next-line
 FLAGS		= -Wall -Wextra -Werror -g	
 RM			= rm -f
 GREEN		= \033[0;32m
+BIG			= \033[0;1m
 RESET		= \033[0m
 
 SOURCES_LIBFT = 	./$(LIBFT_PATH)/ft_atoi.c \
@@ -85,7 +86,7 @@ OBJETS_PRINTF = $(SOURCES_PRINTF:.c=.o)
 OBJETS_GNL = $(SOURCES_GNL:.c=.o)
 
 all: progress $(LIBFT) $(PRINTF) $(GNL) clean
-	@echo "\n$(GREEN)Bravo, les librairies $(LIBFT) $(PRINTF) $(GNL) sont disponibles dans $(NAME)"
+	@echo "\n$(BIG)Bravo, les librairies $(LIBFT) $(PRINTF) $(GNL) sont disponibles dans $(NAME)$(RESET)\n"
 
 %.o: %.c
 	@$(CC) $(FLAGS) -o $@ -c $<
