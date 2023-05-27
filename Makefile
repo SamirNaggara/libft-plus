@@ -86,38 +86,38 @@ OBJETS_PRINTF = $(SOURCES_PRINTF:.c=.o)
 OBJETS_GNL = $(SOURCES_GNL:.c=.o)
 
 all: progress $(LIBFT) $(PRINTF) $(GNL) clean
-	@echo "\n$(BIG)Bravo, les librairies $(LIBFT) $(PRINTF) $(GNL) sont disponibles dans $(NAME)$(RESET)\n"
+	@echo "\n$(BIG)	Bravo, les librairies $(LIBFT) $(PRINTF) $(GNL) sont disponibles dans $(NAME)$(RESET)\n"
 
 %.o: %.c
 	@$(CC) $(FLAGS) -o $@ -c $<
 
 $(LIBFT): $(OBJETS_LIBFT)
-	@echo "Création de la librairie $(LIBFT)"
+	@echo "	Création de la librairie $(LIBFT)"
 	@ar rcs $(LIBFT) $(OBJETS_LIBFT)
 
 $(PRINTF): $(OBJETS_PRINTF)
-	@echo "Création de la librairie $(PRINTF)"
+	@echo "	Création de la librairie $(PRINTF)"
 	@ar rcs $(PRINTF) $(OBJETS_PRINTF)
 
 $(GNL): $(OBJETS_GNL)
-	@echo "Création de la librairie $(GNL)"
+	@echo "	Création de la librairie $(GNL)"
 	@ar rcs $(GNL) $(OBJETS_GNL)
 
 
 
 clean:
-	@echo "Suppresion des .o de LIBFT"
+	@echo "	Suppresion des .o de LIBFT"
 	@rm -f $(OBJETS_LIBFT)
-	@echo "Suppresion des .o de PRINTF"
+	@echo "	Suppresion des .o de PRINTF"
 	@rm -f $(OBJETS_PRINTF)
-	@echo "Suppresion des .o de GNL"
+	@echo "	Suppresion des .o de GNL"
 	@rm -f $(OBJETS_GNL)
 fclean:
-	@echo "Suppresion de la librairie $(LIBFT)"
+	@echo "	Suppresion de la librairie $(LIBFT)"
 	@rm -f $(LIBFT)
-	@echo "Suppresion de la librairie $(PRINTF)"
+	@echo "	Suppresion de la librairie $(PRINTF)"
 	@rm -f $(PRINTF)
-	@echo "Suppresion de la librairie $(GNL)"
+	@echo "	Suppresion de la librairie $(GNL)"
 	@rm -f $(GNL)
 
 re: fclean all
