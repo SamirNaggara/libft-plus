@@ -1,4 +1,4 @@
-NAME		= libft+
+NAME		= libft-plus
 LIBFT		= libft.a
 LIBFT_PATH	= libft
 PRINTF		= printf.a
