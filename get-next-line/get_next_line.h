@@ -6,7 +6,7 @@
 /*   By: snaggara <snaggara@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/28 12:42:32 by snaggara          #+#    #+#             */
-/*   Updated: 2023/05/30 10:47:30 by snaggara         ###   ########.fr       */
+/*   Updated: 2023/05/30 10:53:15 by snaggara         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@ int		ft_read(char **line, int fd);
 char	*ft_strjoin_custom(char *reading, char *tmp);
 size_t	ft_strlen(const char *str);
 int		ft_strchr_custom(const char *s, int c);
-size_t	ft_strlcpy(char *dest, char *src, size_t size);
+size_t	ft_strlcpy_custom(char *dest, char *src, size_t size);
 char	*ft_strdup_custom(char *s);
 
 #endif

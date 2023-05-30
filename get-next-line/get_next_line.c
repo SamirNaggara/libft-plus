@@ -6,7 +6,7 @@
 /*   By: snaggara <snaggara@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/28 12:40:19 by snaggara          #+#    #+#             */
-/*   Updated: 2023/05/30 10:47:48 by snaggara         ###   ########.fr       */
+/*   Updated: 2023/05/30 10:53:05 by snaggara         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@ char	*get_next_line(int fd)
 			return (NULL);
 	}
 	if (read_status)
-		ft_strlcpy(memory[fd], line
+		ft_strlcpy_custom(memory[fd], line
 			+ ft_strchr_custom(line, '\n') + 1, BUFFER_SIZE + 1);
 	else
 		memory[fd][0] = '\0';
