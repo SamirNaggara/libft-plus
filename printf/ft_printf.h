@@ -6,7 +6,7 @@
 /*   By: snaggara <snaggara@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/27 22:43:10 by snaggara          #+#    #+#             */
-/*   Updated: 2023/05/30 14:07:57 by snaggara         ###   ########.fr       */
+/*   Updated: 2023/06/10 21:09:38 by snaggara         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -67,7 +67,7 @@ char				*pc_replace(char *str, t_flag_list *flag, va_list *args,
 void				ft_putstr(char *str, size_t *size, int fd);
 char				*ft_itoa_long(unsigned int n);
 char				*ft_itoa_hexa(unsigned long n);
-char				*ft_itoa_hexa_ulong(ulong n);
+char				*ft_itoa_hexa_ulong(long long n);
 void				del(void *content);
 void				ft_strtoupper(char *str);
 char				*remove_one_char(char *str, size_t pos, size_t *size);
@@ -78,9 +78,9 @@ int					free_infos(t_infos *infos);
 int					free_struct(t_flag_list **flag_list, t_infos *infos);
 void				ft_increment(t_infos *infos);
 char				*free_nbr_to_display(char *char_nbr, char *char_to_display);
-ulong				ft_get_len4(ulong n);
-char				*ft_initialise_result4(ulong len);
-ulong				ft_power4(ulong nb, ulong power);
+long long				ft_get_len4(long long n);
+char				*ft_initialise_result4(long long len);
+long long				ft_power4(long long nb, long long power);
 size_t				ft_get_len3(unsigned long n);
 char				*ft_initialise_result3(size_t len);
 long				ft_power3(unsigned long nb, long power);

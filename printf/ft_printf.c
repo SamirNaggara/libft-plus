@@ -6,7 +6,7 @@
 /*   By: snaggara <snaggara@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/23 17:59:53 by snaggara          #+#    #+#             */
-/*   Updated: 2023/05/30 14:07:01 by snaggara         ###   ########.fr       */
+/*   Updated: 2023/06/10 21:09:38 by snaggara         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,7 +48,7 @@ int	main(){
 	//ft_printf("bah%ca\nb", 0);
 	//char	*ptr;
 	//unsigned int i = 14748364955 ;
-	//ulong j = -9223372036854775807;
+	//long long j = -9223372036854775807;
 	//j--;
 	//int nb1 = ft_printf("a%sa\n", ptr);
 	int nb1 = ft_printf(" %c%c\n", '\0', '1');
